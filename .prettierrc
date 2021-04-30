@@ -1,0 +1,18 @@
+{
+    "printWidth": 160,
+    "singleQuote": true,
+    "useTabs": false,
+    "tabWidth": 4,
+    "semi": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "printWidth": 250,
+                "htmlWhitespaceSensitivity": "ignore"
+            }
+        }
+    ]
+}

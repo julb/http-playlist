@@ -1,0 +1,4 @@
+{
+    "rotationDelay": 5000,
+    "urls": ["http://url-1", "http://url-2", "http://url-3"]
+}
