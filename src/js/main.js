@@ -38,14 +38,16 @@ $(function () {
             indexOfNextScreen = (indexOfVisibleScreen + 1) % this.children('iframe').length;
         }
 
-        // Debug
-        console.log('> Displaying screen: ', indexOfNextScreen + 1);
+        if (indexOfVisibleScreen != indexOfNextScreen) {
+            // Debug
+            console.log('> Displaying screen: ', indexOfNextScreen + 1);
 
-        // Hide the current iframe
-        this.children('iframe.active').removeClass('active').fadeOut(1000);
+            // Hide the current iframe
+            this.children('iframe.active').removeClass('active').fadeOut(1000);
 
-        // Add the active flag on the current iframe.
-        this.children('iframe').eq(indexOfNextScreen).addClass('active').fadeIn();
+            // Add the active flag on the current iframe.
+            this.children('iframe').eq(indexOfNextScreen).addClass('active').fadeIn();
+        }
 
         return this;
     };
