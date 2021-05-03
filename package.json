@@ -1,6 +1,6 @@
 {
     "name": "http-url-playlist",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A simple webapp which display sequentially the given URLs.",
     "main": "index.js",
     "scripts": {
