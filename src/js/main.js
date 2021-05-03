@@ -55,7 +55,7 @@ $(document).ready(function () {
     $('body').empty();
 
     $.get(
-        '/config.json',
+        './config.json',
         function (result) {
             // Adds the message.
             if (result.urls.length == 0) {
